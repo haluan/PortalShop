@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        android:background="@drawable/rpt_back">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:layout_weight="0.84"
+        android:background="@color/green"
+        android:orientation="vertical"
+        android:layout_below="@+id/top" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center_vertical"
+        android:background="@color/blacktop" >
+		<com.portalshop.customview.NoDefaultSpinner
+            android:id="@+id/spinerMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:prompt="@string/menu"
+            android:layout_toLeftOf="@+id/div3"/>
+		<View android:layout_width="2dip"
+            android:layout_height="match_parent"
+            android:layout_margin="9dip"
+            android:background="@color/gray"
+            android:id="@+id/div4"
+            android:layout_toLeftOf="@+id/spinerMenu"/>
+		<LinearLayout
+		    android:id="@+id/back" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:clickable="true"
+            android:background="@drawable/clickedbackground">
+			<ImageView
+            	android:id="@+id/back_image"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentLeft="true"
+            	android:src="@drawable/back_button" 
+            	android:focusable="false"
+            	android:visibility="gone"
+            	android:layout_gravity="center_vertical"/>
+        	<ImageView
+	            android:id="@+id/home"
+    	        android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+            	android:layout_alignParentLeft="true"
+            	android:src="@drawable/market_bag"
+            	android:paddingRight="20dip"
+            	android:layout_gravity="center_vertical"
+            	android:focusable="false"/>
+		</LinearLayout>
+        <TextView
+            android:id="@+id/Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back"
+            android:text="Detail Product"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textSize="20dip"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/div4">
+
+            <com.portalshop.customview.CustomAutoCompleteView
+                android:id="@+id/autoCompleteSearch"
+                android:layout_width="400dip"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:drawableLeft="@drawable/search"
+                android:hint="Search Here"
+                android:singleLine="true"
+                android:nextFocusLeft="@+id/autoCompleteTextView"
+                android:nextFocusUp="@+id/autoCompleteTextView" >
+            </com.portalshop.customview.CustomAutoCompleteView>
+
+            <ImageView
+                android:id="@+id/removeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clickedbackground"
+                android:clickable="true"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/cross" />
+
+            <ImageView
+                android:id="@+id/goButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/clickedbackground"
+                android:clickable="true"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:src="@drawable/go" />
+        </LinearLayout>
+        <View android:layout_width="2dip"
+            android:layout_height="match_parent"
+            android:layout_margin="9dip"
+            android:background="@color/gray"
+            android:id="@+id/div3"
+            android:layout_toLeftOf="@+id/bookmark"/>
+		<Button
+            android:id="@+id/bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/clickedbackground"
+            android:text="Bookmark" android:drawableLeft="@drawable/bookmark_icon"/>
+        
+
+    </RelativeLayout>
+
+        
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="350dp"
+        android:layout_height="750dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="600dp"
+        android:layout_marginTop="70dp" >
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rpt_back"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/leftTop"
+                android:layout_width="351dp"
+                android:layout_height="350dp"
+                android:background="@color/darktrans" >
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp" 
+                    android:src="@drawable/default_image"/>
+
+                <TextView
+                    android:id="@+id/namaProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/thumbnail"
+                    android:layout_alignLeft="@+id/thumbnail"
+                    android:layout_marginBottom="85dip"
+                    android:text="Product Name"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namaOutlet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/infoOutlet"
+                    android:layout_alignLeft="@+id/namaProduct"
+                    android:text="Outlet Name"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20px"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/infoOutlet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/thumbnail"
+                    android:layout_alignLeft="@+id/namaProduct"
+                    android:layout_marginBottom="15dip"
+                    android:text="Outlet Name"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold" />
+				<LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_above="@+id/harga"
+	                android:layout_alignLeft="@+id/buttonGoto"
+	                android:layout_toRightOf="@+id/thumbnail" 
+	                android:gravity="center">
+                    <RatingBar
+	                    android:id="@+id/ProductRate"
+	                    style="@style/smallRatingBar"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:numStars="5" />
+
+	                <TextView
+	                    android:id="@+id/jumrate"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10px"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:text="TextView" />
+                </LinearLayout>
+                
+
+                <TextView
+                    android:id="@+id/harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/buttonGoto"
+                    android:layout_above="@+id/buttonGoto"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginTop="26dp"
+                    android:text="Price"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonGoto"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_alignBottom="@+id/thumbnail"
+                    android:layout_marginBottom="21dp"
+                    android:background="@drawable/btn_style"
+                    android:paddingTop="5px"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="15px"
+                    android:paddingRight="15px"
+                    android:text="Go To Outlet" 
+                    android:layout_marginLeft="200px" android:textColor="@color/white" android:textStyle="normal" android:textSize="15px"/>
+
+                
+
+            </RelativeLayout>
+
+        </LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:background="@color/white"
+            android:layout_below="@+id/linearLayout2"
+            android:orientation="vertical">
+
+			<TextView
+			    android:id="@+id/moreby"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Large Text"
+			    android:textAppearance="?android:attr/textAppearanceLarge" 
+			    android:layout_marginLeft="20px"
+			    android:layout_marginTop="20px"
+			    android:layout_marginBottom="10px"
+			    android:textStyle="bold"
+			    android:textColor="@color/green"/>
+
+        	<ListView
+            	android:id="@+id/listViewrelated"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="10px"
+            	android:background="@color/white"
+            	android:scrollbars="vertical" 
+            	android:divider="@null">
+        	</ListView>
+
+        	<Button
+        	    android:id="@+id/moreButton"
+        	    android:layout_gravity="right"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="40px"
+        	    android:layout_marginRight="20px"
+        	    android:layout_marginBottom="10px"
+        	    android:textColor="@color/black"
+        	    android:text="More >"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+	<ScrollView 
+	    android:layout_width="860dip"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginLeft="370dip"
+	    android:layout_below="@+id/top">
+	<LinearLayout
+	    android:layout_width="860dip"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentBottom="true"
+	    android:paddingLeft="12px"
+	    android:paddingRight="12px"
+	    android:background="@color/grayTrans" >
+
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout2"
+	        android:layout_width="850px"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_weight="0.84" 
+	        android:background="@color/white" android:scrollbars="vertical">
+
+	        <Gallery
+	            android:id="@+id/gallery1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="365dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dip"
+	            android:layout_marginRight="20dip"/>
+
+	        <LinearLayout
+	            android:id="@+id/linearLayout3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="365dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:background="@drawable/test_trans"
+	            android:layout_marginLeft="20dip"
+	            android:layout_marginRight="20dip">
+	        </LinearLayout>
+	        <TextView
+				    android:id="@+id/textView2"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="DESCRIPTION"
+				    android:textColor="@color/green"
+				    android:layout_below="@+id/gallery1"
+				    android:textStyle="bold"
+	            	android:layout_marginLeft="20dip"
+	            	android:layout_marginRight="20dip"
+				    android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+        		android:id="@+id/textDeskripsi"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Large Text"
+        		android:padding="2dip"
+        		android:ellipsize="none"
+        		android:layout_below="@+id/textView2"
+	            android:layout_marginLeft="20dip"
+	            android:layout_marginRight="20dip"
+        		android:scrollHorizontally="false"
+        		android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/black"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="5dip"
+	            android:background="@drawable/rpt_back"
+	            android:layout_below="@+id/textDeskripsi"
+	            android:id="@+id/div1"
+	            android:layout_marginTop="40dip"/>
+			<LinearLayout
+	            android:id="@+id/ratebutton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:orientation="horizontal"
+	            android:layout_below="@+id/div1"
+	            android:layout_marginLeft="20dip"
+	            android:layout_marginRight="20dip"
+	            android:clickable="true"
+	            android:background="@drawable/clickedbackground">
+
+	        	<TextView
+	        	    android:id="@+id/textView3"
+	        	    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center_vertical"
+				    android:text="RATE &amp; REVIEW >"
+				    android:textColor="@color/green"
+				    android:textStyle="bold"
+				    android:textAppearance="?android:attr/textAppearanceLarge"/>
+	        	<RatingBar
+				    android:id="@+id/emptyRate"
+				    style="@style/foodRatingBar"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="100dip"
+				    android:rating="0"
+				    android:numStars="5" />
+
+			</LinearLayout>			<LinearLayout
+	            android:id="@+id/linearLayout5"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:orientation="horizontal"
+	            android:gravity="center_vertical"
+	            android:layout_below="@+id/ratebutton"
+	            android:layout_marginLeft="20dip"
+	            android:layout_marginRight="20dip">
+				<TextView
+				    android:id="@+id/textView1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="YOUR RATE "
+				    android:textColor="@color/green"
+				    android:textStyle="bold"
+				    android:textAppearance="?android:attr/textAppearanceLarge" />
+				<RatingBar
+				    android:id="@+id/myrate"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" 
+				    android:numStars="5"
+				    android:layout_gravity="right"
+				    android:layout_marginLeft="100dip"
+				    style="@style/foodRatingBar"/>
+
+			</LinearLayout>
+			<View android:layout_width="match_parent"
+	            android:layout_height="5dip"
+	            android:background="@drawable/rpt_back"
+	            android:id="@+id/div2"
+	            android:layout_marginTop="5dip"
+	            android:layout_below="@+id/linearLayout5"/>
+			
+	        <TextView
+				    android:id="@+id/TitleReview"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="REVIEW"
+				    android:textColor="@color/green"
+				    android:layout_below="@+id/div2"
+				    android:textStyle="bold"
+	            	android:layout_marginLeft="20dip"
+	            	android:layout_marginRight="20dip"
+	            	android:layout_marginTop="40dip"
+				    android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <ListView
+	            android:id="@+id/listViewRate"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/TitleReview"
+	            android:clickable="false"
+	            android:layout_marginLeft="20dip"
+	            android:layout_marginRight="20dip"
+	            
+	            android:divider="@null">
+
+	        </ListView>
+
+	    </RelativeLayout>
+	</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

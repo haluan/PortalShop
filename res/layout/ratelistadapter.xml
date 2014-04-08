@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingBottom="20px"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:padding="2dip"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/black"/>
+
+    <RatingBar
+        android:id="@+id/listRate"
+        style="@style/smallRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:numStars="5"
+        android:layout_margin="2dip"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/listComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:padding="2dip"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/listDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip"
+        android:text="TextView" />
+
+</LinearLayout>

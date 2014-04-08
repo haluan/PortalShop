@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="7dip"
+    android:paddingRight="7dip"
+    android:paddingTop="12dip"
+    android:paddingBottom="12dip"
+    android:id="@+id/asd"
+    android:focusable="false"> 
+<TextView 
+    android:id="@+id/kategori"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:textColor="@color/green"
+    android:textStyle="bold"
+    android:textAppearance="?android:attr/textAppearanceLarge" android:capitalize="characters"
+    android:focusable="false">
+</TextView>
+</LinearLayout>

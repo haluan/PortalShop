@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/l3"
+    android:id="@+id/lantai">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="403dp"
+        android:layout_height="202dp"
+        android:layout_x="120dp"
+        android:layout_y="4dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="food"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="131dp"
+        android:layout_height="81dp"
+        android:layout_x="635dp"
+        android:layout_y="89dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="texas" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="222dp"
+        android:layout_height="78dp"
+        android:layout_x="764dp"
+        android:layout_y="89dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="neo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="128dp"
+        android:layout_height="81dp"
+        android:layout_x="989dp"
+        android:layout_y="89dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="joni" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="183dp"
+        android:layout_height="188dp"
+        android:layout_x="1094dp"
+        android:layout_y="247dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="projek" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="196dp"
+        android:layout_height="83dp"
+        android:layout_x="1000dp"
+        android:layout_y="462dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="dino" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="73dp"
+        android:layout_height="80dp"
+        android:layout_x="921dp"
+        android:layout_y="462dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="xpax" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="72dp"
+        android:layout_height="81dp"
+        android:layout_x="843dp"
+        android:layout_y="464dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="dream" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="75dp"
+        android:layout_height="83dp"
+        android:layout_x="767dp"
+        android:layout_y="463dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="heart" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="48dp"
+        android:layout_height="86dp"
+        android:layout_x="508dp"
+        android:layout_y="461dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="manga"/>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="42dp"
+        android:layout_height="86dp"
+        android:layout_x="461dp"
+        android:layout_y="462dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="aw"/>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="54dp"
+        android:layout_height="86dp"
+        android:layout_x="404dp"
+        android:layout_y="462dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="mpoto" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="32dp"
+        android:layout_height="85dp"
+        android:layout_x="366dp"
+        android:layout_y="462dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="sky"/>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="62dp"
+        android:layout_height="85dp"
+        android:layout_x="305dp"
+        android:layout_y="462dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="nail"/>
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="129dp"
+        android:layout_height="38dp"
+        android:layout_x="5dp"
+        android:layout_y="537dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="dcost"/>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="54dp"
+        android:layout_height="68dp"
+        android:layout_x="6dp"
+        android:layout_y="461dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="time"/>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="197dp"
+        android:layout_height="70dp"
+        android:layout_x="5dp"
+        android:layout_y="390dp"
+        android:background="@drawable/btn_denah"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:tag="yopi" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="82dp"
+        android:layout_height="86dp"
+        android:layout_x="120dp"
+        android:layout_y="240dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="trisec"/>
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="77dp"
+        android:layout_height="63dp"
+        android:layout_x="122dp"
+        android:layout_y="325dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="gibol"/>
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="1208dp"
+        android:layout_height="84dp"
+        android:layout_x="44dp"
+        android:layout_y="591dp" 
+        android:background="@drawable/btn_denah"
+        android:clickable="true" android:onClick="onclick"
+        android:tag="xxi"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="135dp"
+        android:layout_height="151dp"
+        android:layout_x="617dp"
+        android:layout_y="278dp"
+        android:text="L3"
+        android:tag="info"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+    
+
+</AbsoluteLayout>

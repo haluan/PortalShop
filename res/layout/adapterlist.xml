@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320px"
+    android:layout_height="120px"
+    android:orientation="horizontal" 
+    android:background="@drawable/list_back"
+    android:clickable="true"
+    android:focusable="false">
+
+    <LinearLayout
+        android:id="@+id/thumn"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:orientation="vertical" 
+        android:paddingLeft="10px"
+        android:paddingBottom="5px"
+        android:paddingRight="5px"
+        android:paddingTop="5px"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:src="@drawable/default_image"
+            android:layout_marginLeft="5px"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:paddingTop="20dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/namaPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:focusable="false"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/outletText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:layout_below="@+id/namaPro"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <RatingBar
+            android:id="@+id/ratingBarList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            style="@style/smallRatingBar"
+            android:layout_below="@+id/outletText"
+            android:numStars="5"
+            android:layout_margin="2px"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:focusable="false">
+
+            <Button
+                android:id="@+id/viewlist"
+                android:layout_width="wrap_content"
+                android:layout_height="35px"
+                android:text="View" android:textColor="@color/gray"
+                android:layout_marginRight="5px"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+</LinearLayout>

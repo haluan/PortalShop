@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dip"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip">
+
+    <TextView
+        android:id="@+id/textbookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="30dip"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/go"
+        android:layout_marginRight="30dip" 
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <ImageView
+        android:id="@+id/imageDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textbookmark"
+        android:layout_marginRight="51dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageGo"
+        android:src="@android:drawable/ic_menu_delete"
+        android:clickable="true"
+        android:focusable="true" />
+
+</RelativeLayout>
